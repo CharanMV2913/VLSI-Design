@@ -1,0 +1,119 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Dec 19, 2023 at 18:49:50 IST
+irun
+	-access +rwc
+	RiscV.v
+	RiscV_tb.v
+	decoder.v
+	Memory.v
+	ALU.v
+	ALUmux.v
+Recompiling... reason: file './RiscV_tb.v' is newer than expected.
+	expected: Tue Dec 19 18:47:40 2023
+	actual:   Tue Dec 19 18:49:19 2023
+file: RiscV_tb.v
+	module worklib.RiscVtb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+decoder d1(.instruction(instruction),.clk(clk),.rs1_addr(rs1_addr),.rs2_addr(rs2_addr),.rd_addr(rd_addr),.sub_en(sub_en),.sra_en(sra_en),.subw_en(subw_en),.sraw_en(sraw_en),.add_en(add_en),.sll_en(sll_en),.slt_en(slt_en),.sltu_en(sltu_en),.xor_en(xor_en),.srl_en(srl_en),.or_en(or_en),.and_en(and_en),/*.opcode(opcode),.fun3(fun3),.fun7(fun7),*/.read_en(read_en),.write_en(write_en));
+         |
+ncelab: *W,CUVWSP (./RiscV.v,31|9): 3 output ports were not connected:
+ncelab: (./decoder.v,14): opcode
+ncelab: (./decoder.v,15): fun3
+ncelab: (./decoder.v,16): fun7
+
+	Top level design units:
+		RiscVtb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.RiscVtb:v <0x42172e22>
+			streams:   7, words:  3564
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             27      16
+		Resolved nets:        9       1
+		Registers:           47      37
+		Scalar wires:        16       -
+		Vectored wires:      39       -
+		Always blocks:       24      14
+		Initial blocks:       5       5
+		Cont. assignments:    2       1
+		Pseudo assignments:   3       3
+	Writing initial simulation snapshot: worklib.RiscVtb:v
+Loading snapshot worklib.RiscVtb:v .................... Done
+ncsim> source /home/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+write
+Simulation complete via $finish(1) at time 272 NS + 0
+./RiscV_tb.v:32 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Dec 19, 2023 at 18:49:50 IST  (total: 00:00:00)

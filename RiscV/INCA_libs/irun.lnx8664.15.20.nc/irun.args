@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+RiscV.v
+RiscV_tb.v
+decoder.v
+Memory.v
+ALU.v
+ALUmux.v
