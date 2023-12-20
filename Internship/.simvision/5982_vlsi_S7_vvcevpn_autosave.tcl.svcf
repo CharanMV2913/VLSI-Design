@@ -1,0 +1,133 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set whats-new-dont-show-at-startup 1
+
+#
+# Databases
+#
+database require decode -search {
+	./decode.shm/decode.trn
+	/home/vlsi_S7/Desktop/Internship/decode.shm/decode.trn
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1456x563+53+62}] != ""} {
+    window geometry "Waveform 1" 1456x563+53+62
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	decode::decodertb.add_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.and_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.clk
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.fun3[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.fun7[6:0]}
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.instruction[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.opcode[6:0]}
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.or_en
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.rd_addr[4:0]}
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.rs1_addr[4:0]}
+	} ]
+set id [waveform add -signals  {
+	{decode::decodertb.rs2_addr[4:0]}
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.sll_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.slt_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.sltu_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.sra_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.sraw_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.srl_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.sub_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.subw_en
+	} ]
+set id [waveform add -signals  {
+	decode::decodertb.xor_en
+	} ]
+
+waveform xview limits 0 70ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0
+
+#
+# Layout selection
+#

@@ -1,0 +1,68 @@
+s1(08Dec2023:17:48:14):  irun -access +rwc ALU.v ALU_tb.v 
+s2(08Dec2023:17:49:23):  irun -access +rwc ALU.v ALU_tb.v 
+s3(08Dec2023:17:49:52):  irun -access +rwc ALU.v ALU_tb.v 
+s4(08Dec2023:17:52:15):  irun -access +rwc ALU.v ALU_tb.v 
+s5(08Dec2023:17:52:30):  irun -access +rwc ALU.v ALU_tb.v 
+s6(08Dec2023:17:53:05):  irun -access +rwc ALU.v ALU_tb.v 
+s7(08Dec2023:17:53:55):  irun -access +rwc ALU.v ALU_tb.v 
+s8(08Dec2023:17:54:29):  irun -access +rwc ALU.v ALU_tb.v 
+s9(08Dec2023:17:55:21):  irun -access +rwc ALU.v ALU_tb.v 
+s10(08Dec2023:17:56:35):  irun -access +rwc ALU.v ALU_tb.v 
+s11(08Dec2023:17:57:15):  irun -access +rwc ALU.v ALU_tb.v 
+s12(08Dec2023:17:57:23):  irun -access +rwc ALU.v ALU_tb.v 
+s13(08Dec2023:17:58:10):  irun -access +rwc ALU.v ALU_tb.v 
+s14(08Dec2023:17:59:15):  irun -access +rwc ALU.v ALU_tb.v 
+s15(08Dec2023:18:00:47):  irun -access +rwc ALU.v ALU_tb.v 
+s16(08Dec2023:18:01:29):  irun -access +rwc ALU.v ALU_tb.v 
+s17(08Dec2023:18:01:51):  irun -access +rwc ALU.v ALU_tb.v 
+s18(08Dec2023:18:03:26):  irun -access +rwc ALU.v ALU_tb.v 
+s19(08Dec2023:18:27:28):  irun -access +rwc ALU.v ALU_tb.v 
+s20(09Dec2023:15:17:42):  irun -access +rwc ALU.v ALU_tb.v 
+s21(09Dec2023:15:19:09):  irun -access +rwc ALU.v ALU_tb.v 
+s22(09Dec2023:15:20:08):  irun -access +rwc ALU.v ALU_tb.v 
+s23(09Dec2023:15:26:00):  irun -access +rwc ALU.v ALU_tb.v 
+s24(09Dec2023:15:29:24):  irun -access +rwc ALU.v ALU_tb.v 
+s25(09Dec2023:15:29:40):  irun -access +rwc ALU.v ALU_tb.v 
+s26(09Dec2023:15:29:43):  irun -access +rwc ALU.v ALU_tb.v 
+s27(09Dec2023:15:29:45):  irun -access +rwc ALU.v ALU_tb.v 
+s28(09Dec2023:15:30:01):  irun -access +rwc ALU.v ALU_tb.v 
+s29(09Dec2023:15:40:59):  irun -access +rwc ALU.v ALU_tb.v 
+s30(09Dec2023:15:41:33):  irun -access +rwc ALU.v ALU_tb.v 
+s31(09Dec2023:15:42:48):  irun -access +rwc ALU.v ALU_tb.v 
+s32(09Dec2023:15:46:33):  irun -access +rwc ALU.v ALU_tb.v 
+s33(09Dec2023:15:49:00):  irun -access +rwc ALU.v ALU_tb.v 
+s34(09Dec2023:15:50:04):  irun -access +rwc ALU.v ALU_tb.v 
+s35(09Dec2023:15:50:30):  irun -access +rwc ALU.v ALU_tb.v 
+s36(10Dec2023:14:25:07):  irun -access +rwc ALUmux.v ALUmux_tb.v 
+s37(10Dec2023:14:26:33):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s38(10Dec2023:14:26:36):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s39(10Dec2023:14:26:59):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s40(10Dec2023:14:30:46):  irun -access +rwc ALU.v 
+s41(10Dec2023:14:30:54):  irun -access +rwc ALUmux.v 
+s42(10Dec2023:14:31:09):  irun -access +rwc ALUmux.v ALU.v 
+s43(10Dec2023:14:31:11):  irun -access +rwc ALUmux.v ALU.v 
+s44(10Dec2023:14:34:38):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s45(10Dec2023:14:35:19):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s46(17Dec2023:22:00:53):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s47(17Dec2023:22:02:58):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s48(17Dec2023:22:03:16):  irun -sv -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s49(17Dec2023:22:03:29):  irun -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s50(17Dec2023:22:03:36):  irun -sv -access +rwc ALU.v ALUmux.v ALUmux_tb.v 
+s51(18Dec2023:17:02:34):  irun -access +rwc ALUmux.v ALU.v 
+s52(18Dec2023:17:02:40):  irun -access +rwc ALUmux.v ALU.v 
+s53(18Dec2023:17:11:01):  irun -access +rwc ALUmux.v ALU.v 
+s54(18Dec2023:17:11:11):  irun -access +rwc ALUmux.v ALU.v 
+s55(18Dec2023:17:12:03):  irun -access +rwc ALUmux.v ALU.v 
+s56(18Dec2023:17:12:29):  irun -access +rwc ALUmux.v ALU.v 
+s57(18Dec2023:17:21:27):  irun -access +rwc ALUmux.v ALU.v ALUmux_tb.v 
+s58(18Dec2023:17:23:05):  irun -access +rwc ALUmux.v ALU.v ALUmux_tb.v 
+s59(18Dec2023:17:24:19):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s60(18Dec2023:17:24:47):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s61(18Dec2023:17:26:01):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s62(18Dec2023:17:26:25):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s63(18Dec2023:17:26:36):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s64(18Dec2023:17:27:23):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s65(18Dec2023:17:33:05):  irun -access +rwc ALUmux.v ALUmux_tb.v ALU.v 
+s66(18Dec2023:18:17:05):  irun -access +rwc ALUmux.v ALU.v 
+s67(18Dec2023:18:18:31):  irun -access +rwc ALUmux.v ALU.v 
+s68(18Dec2023:18:28:33):  irun -access +rwc ALUmux.v ALU.v ALUmux_tb.v 

@@ -1,0 +1,59 @@
+module ALUmux(	input reg sub_en,
+		input reg sra_en,
+		input reg subw_en,
+		input reg sraw_en,
+		input reg add_en,
+		input reg sll_en,
+		input reg slt_en,
+		input reg sltu_en,
+		input reg xor_en,
+		input reg srl_en,
+		input reg or_en,
+		input reg and_en ,input [31:0]rs1_data,input [31:0]rs2_data,output reg [31:0]rd_data);
+
+reg [11:0] mux_code;
+
+assign mux_code <={add_en,sub_en,sra_en,subw_en,sraw_en,sll_en,slt_en,sltu_en,xor_en,
+srl_en,or_en,and_en};
+always @(*)
+	begin
+	case(mux_code)
+		12'b100000000000: begin
+				Add add_inst(.add_en(add_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+				end
+                12'b010000000000:begin
+				sub sub_inst(.sub_en(sub_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+  				end
+		12'b001000000000:begin	
+				sra sra_inst(.sra_en(sra_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+                12'b000100000000: begin
+				subw subw_inst(.subw_en(subw_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+				end
+                12'b000010000000:begin
+				sraw sraw_inst(.sraw_en(sraw_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+  				end
+		12'b000001000000:begin	
+				sll sll_inst(.sll_en(sll_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+		12'b000000100000:begin	
+				slt slt_inst(.slt_en(slt_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+		12'b000000010000:begin	
+				sltu sltu_inst(.sltu_en(sltu_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+		12'b000000001000:begin	
+				Xor xor_inst(.xor_en(xor_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+		12'b000000000100:begin	
+				srl srl_inst(.srl_en(srl_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+		12'b000000000010:begin	
+				Or or_inst(.or_en(or_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+		12'b000000000001:begin	
+				And and_inst(.and_en(and_en),.rs1_data(rs1_data),.rs2_data(rs2_data),.rd_data(rd_data))
+ 				end
+	endcase
+	end
+endmodule 

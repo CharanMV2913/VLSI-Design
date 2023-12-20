@@ -1,0 +1,62 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Dec 18, 2023 at 18:28:33 IST
+irun
+	-access +rwc
+	ALUmux.v
+	ALU.v
+	ALUmux_tb.v
+file: ALUmux_tb.v
+	module worklib.ALUmux_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ALUmux_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ALUmux_tb:v <0x29938c3f>
+			streams:  14, words: 18405
+		worklib.Add:v <0x29dc16cc>
+			streams:   2, words:   369
+		worklib.And:v <0x477f51b8>
+			streams:   2, words:   363
+		worklib.Or:v <0x43953b28>
+			streams:   2, words:   381
+		worklib.Xor:v <0x3323dae9>
+			streams:   2, words:   357
+		worklib.multiplexer:v <0x3dfc621e>
+			streams:   2, words:  1694
+		worklib.sll:v <0x6c4d6aac>
+			streams:   2, words:   442
+		worklib.slt:v <0x21f36ed2>
+			streams:   3, words:  1173
+		worklib.sltu:v <0x232ec348>
+			streams:   2, words:   464
+		worklib.sra:v <0x49f2fe81>
+			streams:   2, words:   438
+		worklib.srl:v <0x42051f4a>
+			streams:   2, words:   438
+		worklib.sub:v <0x50cce3e0>
+			streams:   2, words:   375
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             24      13
+		Resolved nets:        9       1
+		Registers:           33      23
+		Scalar wires:        20       -
+		Vectored wires:      37       -
+		Always blocks:       21      11
+		Initial blocks:       2       2
+		Cont. assignments:    2       1
+		Pseudo assignments:  12      12
+	Writing initial simulation snapshot: worklib.ALUmux_tb:v
+Loading snapshot worklib.ALUmux_tb:v .................... Done
+ncsim> source /home/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+1
+Simulation complete via $finish(1) at time 270 NS + 0
+./ALUmux_tb.v:92 #200 $finish; 
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Dec 18, 2023 at 18:28:34 IST  (total: 00:00:01)

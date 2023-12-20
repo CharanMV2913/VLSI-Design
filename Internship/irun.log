@@ -1,0 +1,44 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Dec 12, 2023 at 11:58:46 IST
+irun
+	-access +rwc
+	decoder.v
+	decoder_tb.v
+Recompiling... reason: file './decoder.v' is newer than expected.
+	expected: Fri Dec  8 18:34:32 2023
+	actual:   Sat Dec  9 16:24:58 2023
+file: decoder.v
+	module worklib.decoder:v
+		errors: 0, warnings: 0
+file: decoder_tb.v
+	module worklib.decodertb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		decodertb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.decoder:v <0x1ad12a54>
+			streams:   2, words:  4878
+		worklib.decodertb:v <0x6390e7e8>
+			streams:   5, words:  2668
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           20      20
+		Scalar wires:        13       -
+		Vectored wires:       7       -
+		Always blocks:        1       1
+		Initial blocks:       3       3
+		Pseudo assignments:   2       2
+	Writing initial simulation snapshot: worklib.decodertb:v
+Loading snapshot worklib.decodertb:v .................... Done
+ncsim> source /home/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 70 NS + 0
+./decoder_tb.v:27 #10 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Dec 12, 2023 at 11:58:46 IST  (total: 00:00:00)
