@@ -1,0 +1,9 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-sv
+-access
++rwc
+RAM_1MB_i1.vp
+testbench.sv

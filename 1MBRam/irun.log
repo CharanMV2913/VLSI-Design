@@ -1,0 +1,41 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jan 05, 2024 at 20:56:40 IST
+irun
+	-sv
+	-access +rwc
+	RAM_1MB_i1.vp
+	testbench.sv
+Loading snapshot worklib.tbench_top:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /home/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+FAIL - Data Read : Location - 1dee8, Retrieved xx , Actual = ff
+PASS - Data Write: Saved f0 in location 43a71
+PASS - Data Write: Saved 03 in location fa418
+PASS - Data Read : Location - fa418, Retrieved 03 , Actual = 03
+PASS - Data Write: Saved e3 in location f593e
+FAIL - Data Read : Location - 9c3ac, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - bed2b, Retrieved xx , Actual = ff
+PASS - Data Write: Saved 3c in location dcf31
+FAIL - Data Read : Location - 3576d, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - 9e1a9, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - 40abb, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - 3be12, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - aa7df, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - 40691, Retrieved xx , Actual = ff
+FAIL - Data Read : Location - c1c99, Retrieved xx , Actual = ff
+PASS - Data Write: Saved 20 in location f0f18
+PASS - Data Write: Saved 40 in location b0b91
+PASS - Data Read : Location - b0b91, Retrieved 40 , Actual = 40
+PASS - Data Write: Saved d1 in location bc31d
+PASS - Data Read : Location - bc31d, Retrieved d1 , Actual = d1
+FAIL - Data Read : Location - 8a0bc, Retrieved xx , Actual = ff
+PASS - Data Write: Saved e5 in location 2fc9a
+PASS - Data Read : Location - 2fc9a, Retrieved e5 , Actual = e5
+PASS - Data Write: Saved af in location 309b5
+FAIL - Data Read : Location - 401cc, Retrieved xx , Actual = ff
+Simulation complete via $finish(1) at time 500 NS + 3
+./environment.sv:41     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Jan 05, 2024 at 20:56:40 IST  (total: 00:00:00)

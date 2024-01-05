@@ -1,0 +1,16 @@
+interface.sv
+/home/vlsi_S7/Desktop/1MBRam/interface.sv
+test.sv
+/home/vlsi_S7/Desktop/1MBRam/test.sv
+environment.sv
+/home/vlsi_S7/Desktop/1MBRam/environment.sv
+transaction.sv
+/home/vlsi_S7/Desktop/1MBRam/transaction.sv
+generator.sv
+/home/vlsi_S7/Desktop/1MBRam/generator.sv
+driver.sv
+/home/vlsi_S7/Desktop/1MBRam/driver.sv
+monitor.sv
+/home/vlsi_S7/Desktop/1MBRam/monitor.sv
+scoreboard.sv
+/home/vlsi_S7/Desktop/1MBRam/scoreboard.sv
