@@ -1,0 +1,39 @@
+/////////////////////////to transfer the file into different devices //////////////////////////////////////
+
+rsync -av /home/internals/Desktop/* 190.160.130.129:/home/internals/Desktop/
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////physical Design //////////////////////////////////////////////
+
+
+saveDesign name.enc ##save desgin	
+	
+source name.enc ##open design
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////SYSTEM VERILOG///////////////////////////////
+
+irun -sv -access +rwc random.sv // to run system verilog file independently.
+
+ 
+irun -sv -access +rwc -f compile.f // to run all the files inside a compile.f file add the paths of all the files example ./and.v
+./andtb.sv 
+
+irun -sv -access +rwc -f compile.f -coverage all // to check the coverage of all the inputs use coverage all and it will generate a file named as COV_work.
+
+use IMC & tool to check the functianlity coverage .
+
+irun -sv -access +rwc random.sv -seed 4533245 // to genrate diffrent set of random values each time .
+
+rm -rf to delete the file created by coverage all cmd ...... to generate a functional coverage again we have to delete the file created by functional coverage cmd .
+
+///////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////GVIM /////////////////////////////////////////////////
+
+gvim -o and.v andtb.v to view the files parallelly 
+//////////////////////////////////////////////////////////////////////////////
+
+
