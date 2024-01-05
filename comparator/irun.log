@@ -1,0 +1,122 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jan 05, 2024 at 20:59:25 IST
+irun
+	-sv
+	-access +rwc
+	comp.v
+	testbench.sv
+file: comp.v
+	module worklib.comp:v
+		errors: 0, warnings: 0
+file: testbench.sv
+	interface worklib.intf:sv
+		errors: 0, warnings: 0
+			t.randomize();
+			          |
+ncvlog: *W,FUNTSK (generator.sv,13|13): function called as a task without void'().
+(`include file: generator.sv line 13, `include file: environment.sv line 2, `include file: test.sv line 1, file: testbench.sv line 2)
+	program worklib.test:sv
+		errors: 0, warnings: 0
+	module worklib.tbench_top:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x1c38c444
+		tbench_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x019fdcd4>
+			streams:   8, words:  5639
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x23684027>
+			streams:   0, words:     0
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x268b21a9>
+			streams:   8, words:  8817
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x28943c9a>
+			streams:  10, words:  8002
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x5f293e94>
+			streams:   8, words:  8209
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x65ced88a>
+			streams:  13, words: 13446
+		worklib.\$unit_0x1c38c444 :compilation_unit <0x761adfa4>
+			streams:   8, words:  4692
+		worklib.comp:v <0x24031520>
+			streams:   1, words:  1287
+		worklib.tbench_top:sv <0x2d57de5a>
+			streams:   5, words:  1284
+		worklib.test:sv <0x11c6c2f2>
+			streams:   1, words:  1175
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    2       2
+		Interfaces:                 1       1
+		Programs:                   1       1
+		Registers:                 41      63
+		Scalar wires:               6       -
+		Vectored wires:             2       -
+		Always blocks:              1       1
+		Initial blocks:             1       1
+		Parallel blocks:            1       1
+		Pseudo assignments:         5       5
+		Compilation units:          1       1
+		SV Class declarations:      6       6
+		SV Class specializations:   6       6
+	Writing initial simulation snapshot: worklib.tbench_top:sv
+Loading snapshot worklib.tbench_top:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /home/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+In:Generator:a=1111,b=1100,y1=0,y2=0,y3=0
+_________
+In:Generator:a=1110,b=0100,y1=0,y2=0,y3=0
+_________
+In:Generator:a=1110,b=1011,y1=0,y2=0,y3=0
+_________
+In:Generator:a=1110,b=1100,y1=0,y2=0,y3=0
+_________
+In:Generator:a=0111,b=1111,y1=0,y2=0,y3=0
+_________
+In:Generator:a=0001,b=0010,y1=0,y2=0,y3=0
+_________
+In:Generator:a=0101,b=1001,y1=0,y2=0,y3=0
+_________
+In:Generator:a=1010,b=1001,y1=0,y2=0,y3=0
+_________
+In:Generator:a=0101,b=1100,y1=0,y2=0,y3=0
+_________
+In:Generator:a=1110,b=1111,y1=0,y2=0,y3=0
+_________
+In:driver:a=1111,b=1100,y1=0,y2=0,y3=0
+_________
+In:driver:a=1110,b=0100,y1=0,y2=0,y3=0
+_________
+In:driver:a=1110,b=1011,y1=0,y2=0,y3=0
+_________
+In:driver:a=1110,b=1100,y1=0,y2=0,y3=0
+_________
+In:driver:a=0111,b=1111,y1=0,y2=0,y3=0
+_________
+In:driver:a=0001,b=0010,y1=0,y2=0,y3=0
+_________
+In:driver:a=0101,b=1001,y1=0,y2=0,y3=0
+_________
+In:driver:a=1010,b=1001,y1=0,y2=0,y3=0
+_________
+In:driver:a=0101,b=1100,y1=0,y2=0,y3=0
+_________
+In:driver:a=1110,b=1111,y1=0,y2=0,y3=0
+_________
+In:Monitor:a=1110,b=1111,y1=0,y2=0,y3=1
+_________
+Passed
+In:Scoreboard:a=1110,b=1111,y1=0,y2=0,y3=1
+_________
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Jan 05, 2024 at 20:59:25 IST  (total: 00:00:00)
